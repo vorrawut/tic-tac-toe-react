@@ -26,6 +26,11 @@ export default class Board extends React.Component {
 
     handleClick(i) {
       const squares = this.state.squares.slice();
+
+      // Add check if the game already finished, the user prohibited to clicking.
+      if (calculateWinner(squares) || squares[i]) {
+        return;
+      }
       squares[i] = this.state.xIsNext ? 'X' : 'O';
       this.setState({
         squares: squares,
