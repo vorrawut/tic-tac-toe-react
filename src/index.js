@@ -6,33 +6,9 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 
 // Components
-import Board from './components/boardComponent';
+import Game from './components/gameMain';
 
-
- /**
-  * This is main class of game.
-  *
-  * @class Game
-  * @extends {React.Component}
-  */
- class Game extends React.Component {
-    render() {
-      return (
-        <div className="game">
-          <div className="game-board">
-            <Board />
-          </div>
-          <div className="game-info">
-            <div>{/* status */}</div>
-            <ol>{/* TODO */}</ol>
-          </div>
-        </div>
-      );
-    }
-  }
-
-  // ========================================
-
+  // Rendering the game component Object
   ReactDOM.render(
     <Game />,
     document.getElementById('root')
