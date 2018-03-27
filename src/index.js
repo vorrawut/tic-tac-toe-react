@@ -3,10 +3,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // CSS
-import './index.css';
+import './css/index.css';
 
 // Components
-import Board from './boardComponent';
+import Board from './components/boardComponent';
 
 
  /**
